@@ -9,3 +9,7 @@
 .pagination a.more {
     margin-left: 0;
 }
+
+.post .content img {
+    min-width: 100%;
+}
