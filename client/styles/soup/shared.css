@@ -1,0 +1,731 @@
+
+/* Shared between all Soup skins (& storefront) */
+
+#posts {
+  position: relative;  
+}
+
+#posts .post, #posts .multipost {
+  padding-bottom: 1.5em;
+}
+#posts .multipost-container {
+  padding-bottom: 0;
+}
+
+.post .content img {
+  behavior: url(/stylesheets/iepngfix.htc);
+}
+
+.post .content .left { /* floating images */
+  float: left;
+  margin: 0 .8em .5em 0;
+}
+
+.post .meta .type a {
+  display: block;
+  height: 100%;
+}
+
+.post .meta .time abbr {
+  border-bottom: none;
+}
+
+a.avatarlink,
+.source a.url {
+  text-decoration: none;
+}
+a.avatarlink img,
+.source a.url img {
+  position: relative;
+  top: .3em;
+}
+.post .source .user_container {
+  margin: 0 0 0 .3em;
+}
+.user_container {
+  display: block; 
+}
+.user_container_group {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.user_container_group .url {
+  position: absolute;
+}
+.user_container_group .url a,
+.user_container_group .url img {
+  display: block;
+}
+.user_container_group .url img {
+  border: 1px solid #ccc;
+}
+.user_container_group .user {
+  left: 0; top:0;
+  z-index: 2;
+}
+.user_container_group .group {
+  right: 0; bottom: 0;
+  z-index: 1;
+}
+.source .user_container {
+  display: inline;
+}
+.user_container a {
+  display: block; /* for bubble positioning */
+}
+.source .user_container a,
+.source .user_container img {
+  display: inline;
+}
+
+.user_container .bubble {
+  display: none !important;
+}
+.vcard .user_container {
+  display: block;  
+}
+
+.post_image .gallery .gallery-thumbs  {
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.post_image .gallery .gallery-thumbs a {
+  display: block;
+  float: left;
+  padding: 3px;
+}
+.post_image .gallery .gallery-thumbs a.sel,
+.post_image .gallery .gallery-images .lazy_load {
+  background: url('/client/images/black30.png');
+  behavior: url(/stylesheets/iepngfix.htc);
+}
+.post_image .gallery .gallery-thumbs a img {
+  display: block;  
+}
+.post_image .gallery .gallery-images .lazy_load .state-spinner {
+  height: 20em;
+}
+
+.post_image .imagecontainer {
+  position: relative;
+  overflow: hidden; zoom: 1;
+}
+.post_image .imagecontainer img,
+.post_image .imagecontainer a.lightbox {
+  position: absolute;
+  left:0; top:0;
+  z-index: 1;
+}
+.post_image .imagecontainer .caption {
+  display: none;
+  position: absolute;
+  left:0; bottom:0;
+  z-index: 2; 
+  width: 100%;
+  padding: .3em 0;
+  overflow: hidden;
+  background:url(/client/images/black80.png);
+  behavior: url(/stylesheets/iepngfix.htc);
+}
+.post_image .state-caption .caption {
+  display: block;
+}
+.post_image .imagecontainer .caption a,
+.post_image .imagecontainer .caption span {
+  color: #aaa;
+  font-size: .9em;
+}
+.post_image .imagecontainer .caption span {
+  padding-left: .5em;
+}
+.post_image .imagecontainer .caption a:hover {
+  color: #fff;
+}
+.post_image .imagecontainer .caption a span {
+  text-decoration: none;
+}
+
+.post .reactions .user_container,
+.post .reactions .user_container a,
+.post .reactions .user_container img {
+  display: inline;
+}
+.post .reactions .user_container img {
+  top: 0;
+  position: static;
+  vertical-align: middle;
+}
+.post .reactions span.info,
+.post .reactions .user_container span.name {
+  vertical-align: middle;
+}
+.post .reactions .user_container {
+  margin: 0 0 0 .3em;
+}
+.post .reactions {
+  padding: 0;
+}
+.post .reaction_to {
+  margin: 0 0 .5em 0;
+}
+.post .reactions_by {
+  clear: both;
+  margin: .5em 0 0 0;
+}
+.post .reactions li {
+  list-style: none;
+  margin-bottom: 0.2em;
+  overflow: hidden;
+}
+.post .reactions li .original_link {
+  display: block;
+  text-decoration: none;
+  color: inherit !important;
+  padding: 0.3em 0 0.3em 0;
+  height: 2em;
+}
+.post .reactions li .toggle1 .open {
+}
+.post .reactions li .original_link:focus { outline: none; } /* Get rid of Firefox outline on click. */
+.post .reactions li .toggle .button:focus { outline: none; } /* Get rid of Firefox outline on click. */
+.post .reactions li .toggle {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  position: relative;
+}
+.post .reactions li .toggle1 {
+  background: transparent url('/client/images/black30.png') repeat scroll 0 0;
+}
+.post .reactions li .toggle .button {
+  width: 2em;
+  height: 2em;
+  display: block;
+  float: left;
+  background: transparent url('/client/images/black30.png') repeat scroll 0 0;
+}
+.post .reactions li .toggle .button .inner {
+  background: transparent url('/images/small_arrow_right.gif') no-repeat 60% 50%;
+  width: 2em;
+  height: 2em;
+  display: block;
+}
+.post .reactions li.original_link_open .toggle .button .inner {
+  background: transparent url('/images/small_arrow_down.gif') no-repeat 50% 60%;
+}
+.post .reactions li .toggle1,
+.post .reactions li .toggle2 {
+  padding-left: .3em;
+  margin-left: 2em;
+  position: absolute;
+  width: 100%;
+}
+.post .reactions li .toggle2 {
+  padding: .3em 0;
+  padding-left: .3em;
+}
+.post .reactions li.original_link_open .toggle1 {
+  display: none;
+}
+.post .reactions li.original_link_open .toggle2 {
+  display: block;
+}
+.post .reactions li .state-spinner {
+  height: 3em;
+}
+.post .reactions .original {
+  clear: both;
+  padding: 0.5em;
+  background: transparent url('/client/images/black30.png') repeat scroll 0 0;
+}
+.post .reactions .original .content_width_dummy {
+  height: 1px;
+}
+.post .reactions .original .post {
+  margin: 0 !important;
+  padding: 0 !important;
+  left: 0 !important;
+  font-size: 1em !important;
+  background: none !important;
+}
+
+
+.post .meta .type { behavior: url(/stylesheets/iepngfix.htc); }
+.post_regular    .meta .type { background-image: url('/client/images/icon_regular.png'); }
+.post_link       .meta .type { background-image: url('/client/images/icon_link.png'); }
+.post_quote      .meta .type { background-image: url('/client/images/icon_quote.png'); }
+.post_image      .meta .type { background-image: url('/client/images/icon_image.png'); }
+.post_video      .meta .type { background-image: url('/client/images/icon_video.png'); }
+.post_file       .meta .type { background-image: url('/client/images/icon_file.png'); }
+.post_file_audio .meta .type { background-image: url('/client/images/icon_audio.png'); }
+.post_review     .meta .type { background-image: url('/client/images/icon_review.png'); }
+.post_event      .meta .type { background-image: url('/client/images/icon_event.png'); }
+.post_event      .meta .type { background-image: url('/client/images/icon_event.png'); }
+.post_reaction   .meta .type { background-image: url('/client/images/icon_reaction.png'); }
+.post_repost     .meta .type { background-image: url('/client/images/icon_repost.png'); }
+
+#post-video-ad   .meta .type { background-image: none; }
+
+
+/* SPECIAL STYLES FOR CERTAIN TYPES/IMPORTS */
+
+/* less prominent */
+#posts .long div.body {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+
+#posts .delicious .content,
+#posts .jaiku .content,
+#posts .twitter .content {
+  font-size: .9em;
+}
+
+#posts .delicious .content .tags {
+  font-size: .9em;
+  margin-top: .3em;  
+}
+
+/* Post type link */
+.post_link .content h3 {
+  display: inline;
+  margin-right: .3em;
+}
+.post_link .admin-edit h3 {
+  margin-right: 0;
+}
+#posts .mixx .content h3 {
+  display: block;
+}
+
+/* Post type file */
+.post_file .content h3 {
+  display: inline;
+}
+.post_file_audio .content h3 {
+  display: block;
+}
+.post_file .content iframe {
+  margin-top: .5em;
+}
+
+/* Post type review */
+.post_review .content .imagecontainer {
+  margin-bottom: .2em;
+}
+.review_tall_image .content .imagecontainer {
+  float: right;
+  margin: .4em 0 .5em 1em;
+}
+.post_review .content .heading {
+  overflow: hidden;
+  margin-bottom: 0.2em;
+}
+.post_review .content h3 {
+  margin: 0 .5em 0 0;
+  display: inline;
+}
+.review_bigmedia .content h3 {
+  font-size: 1.2em;
+  letter-spacing: -0.01em;
+}
+.review_tall_image .content h3 {
+  margin-bottom: .3em;
+}
+.post_review .content .rating {
+  display: block;
+  float: right;
+  width: 96px;
+  margin-left: .3em;
+  overflow: hidden;
+  border: 0;
+}
+.post_review .content .rating img {
+  float: left;
+  margin-right: 4px;
+  margin-top: .2em;
+}
+.review_tall_image .content .description {
+  text-align: justify;
+}
+
+/* Post type event */
+.post_event .content .imagecontainer {
+  margin-bottom: .3em;
+}
+.post_event h3 {
+  margin-bottom: .2em;
+  font-size: 1.3em;
+}
+.post_event .dtstart {
+  width: 3em;
+  float: left;
+  margin: 0 .7em .7em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+}
+.post_event .dtstart span {
+  display: block;
+}
+.post_event .dtstart .month {
+  background-color: #900;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+.post_event .dtstart .day {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.post_event .description {
+  clear: left;
+  margin-top: .5em;
+}
+.post_event .dtend {
+  border: 0;
+}
+
+/* Magnolia */
+#posts .magnoliafull .content h3 {
+  display: block;  
+}
+
+/* Google Reader */
+#posts .googlereader .content {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-right-color: #333;
+  border-bottom-color: #333;
+  font-size: .9em:
+}
+#posts .googlereader .content .from {
+  margin: .3em 0; 
+}
+#posts .googlereader .content .from a {
+  color: #666;
+  font-size: .9em;
+}
+#posts .googlereader .content h3 {
+  padding: 12px 10px 0 10px;
+  margin-bottom: 0;
+}
+#posts .googlereader .content h3 a {
+  color: #000;
+  text-decoration: none;
+}
+#posts .googlereader .content a {
+  color: #00f;
+}
+#posts .googlereader .content .body {
+  padding-bottom: 10px;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  overflow: hidden;
+}
+
+/* Digg */
+#posts .diggdugg .content h3,
+#posts .diggsubmitted .content h3 {
+  display: block;
+}
+#posts .content .digg {
+  float: left;
+  margin-right: .5em;
+}
+
+
+/* Jaiku/Twitter */
+
+#posts .post_regular.twitter {
+  overflow: hidden;  
+}
+#posts .jaiku .content,
+#posts .post_regular.twitter .content {
+  position: relative;  
+}
+#posts .jaiku .content .body,
+#posts .post_regular.twitter .content .body {
+  color: #000;
+  line-height: 1.3em;
+}
+#posts .jaiku .content .body a,
+#posts .post_regular.twitter .content .body a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+}
+#posts .post_regular.twitter .content .body {
+  margin-left: 6px;
+  overflow: hidden;
+}
+#posts .jaiku .content .body {
+  margin-left: 8px;
+}
+#posts .post_regular.twitter .content .body {
+  border: 1px solid #777;
+  background: #fff;
+}
+#posts .post_regular.twitter .content .reactions .body {
+  border: none;
+  background: transparent;
+}
+#posts .jaiku .content .body {
+  border: 1px solid #c7e5e9;
+  background: transparent url('/images/jaiku_bg.gif') repeat-x scroll 0pt 100%;
+}
+#posts .post_regular.twitter .content .reactions .body {
+  border: none;
+  background: transparent;
+}
+#posts .jaiku .content .body div,
+#posts .post_regular.twitter .content .body div {
+  padding: .6em .9em;
+}
+#posts .jaiku .content .body div {
+  overflow: hidden;
+}
+#posts .jaiku .content .extra,
+#posts .post_regular.twitter .content .extra {
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+
+#posts .summize .content .extra {
+  left: 36px;
+}
+
+#posts .summize .body a.username {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+#posts .summize .content .extra { /* for summize, enforce arrow to left and don't let skin chose (because of avatar) */
+  background-position: right top !important;
+  left: 36px !important;
+  right: auto !important;
+}
+#posts .summize .content .body { 
+  margin-left: 6px !important;
+  margin-right: 0 !important;
+}
+#content .summize .content .extra { background-image: url('/images/twitter_l.gif') !important }
+
+#posts .twitter .content .extra {
+  background-image: url('/images/twitter_l.gif');
+  width: 7px;
+  height: 13px;
+}
+#posts .jaiku .content .extra {
+  background-image: url('/images/jaiku_l.png');
+  width: 9px;
+  height: 15px;
+  behavior: url(/stylesheets/iepngfix.htc);
+}
+#posts .jaiku .content .body img.icon {
+  float: left;
+  margin-right: .5em;
+}
+#posts .twitter .content .body a.user {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 0;
+}
+#posts .twitter .content .body a:hover {
+  border-bottom: 1px solid #000;
+}
+
+#posts .twitter .content a.avatar {
+  float: left;
+  margin: 0 9px 6px 0;
+  border-bottom: 0 !important;
+}
+#posts .twitter .content a.avatar img {
+  display: block;
+}
+
+/* Tumblr */
+
+#posts .tumblr blockquote {
+   margin-left: 3px;
+   padding-left:2px;
+   border-left: 1px solid black;
+}
+
+/* Music */
+#posts .musictrack {
+  margin-bottom: 0;
+}
+#posts .musictrack .content {
+  font-size: .75em;
+}
+#posts .musictrack h3 {
+  font-weight: normal;
+  display: block;
+}
+#posts .musictrack .note {
+  font-family: 'Arial Unicode', Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  margin-right: .4em;
+  margin-top: .1em;
+  opacity: .4;
+}
+#posts .lastfmloved .note {
+  font-size: 1.4em;
+}
+
+/* plurk verbs */
+.plurk .verb_is,
+.plurk .verb_says,
+.plurk .verb_feels,
+.plurk .verb_thinks,
+.plurk .verb_wants,
+.plurk .verb_wishes,
+.plurk .verb_has,
+.plurk .verb_loves,
+.plurk .verb_hates,
+.plurk .verb_asks,
+.plurk .verb_will,
+.plurk .verb_was,
+.plurk .verb_had,
+.plurk .verb_likes,
+.plurk .verb_shares,
+.plurk .verb_gives,
+.plurk .verb_wonders,
+.plurk .verb_needs,
+.plurk .verb_hopes {
+  padding: 1px 3px; color: #fff;
+}
+.plurk .verb_is { background-color: #E57C43; }
+.plurk .verb_says { background-color: #E2560B; }
+.plurk .verb_feels { background-color: #2d84be; }
+.plurk .verb_thinks { background-color: #689cc1; }
+.plurk .verb_wants { background-color: #8db241; }
+.plurk .verb_wishes { background-color: #5bb017; }
+.plurk .verb_has { background-color: #7a9a37; }
+.plurk .verb_loves { background-color: #b20c0c; }
+.plurk .verb_hates { background-color: #111; }
+.plurk .verb_asks { background-color: #8361bc; }
+.plurk .verb_will { background-color: #b46d89; }
+.plurk .verb_was { background-color: #525252; }
+.plurk .verb_had { background-color: #8c8c8c; }
+.plurk .verb_likes { background-color: #cb2728; }
+.plurk .verb_shares { background-color: #a74949; }
+.plurk .verb_gives { background-color: #620e0e; }
+.plurk .verb_wonders { background-color: #2E4E9E; }
+.plurk .verb_needs { background-color: #7A9A37; }
+.plurk .verb_hopes { background-color: #E05BE9; }
+
+.friendfeed .content .body div div div div { opacity: .6; filter:alpha(opacity=60); }
+
+/* Blip.FM */
+.blipfm .embed {
+  clip: rect(45px, 1000px, 190px, 10px);
+  margin-left: -10px;
+  margin-top: -45px;
+}
+.blipfm .embed object, .blipfm .embed embed {
+  height: 170px;
+}
+.blipfm .body {
+  display: none;  
+}
+
+/* Google News */
+
+.post .googlenews_image {
+  float: left;
+  margin-right: .6em;
+}
+.post .googlenews_source {
+  display: block;
+}
+
+/* Facebook */
+.facebookitems div.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+.facebookitems div.title,
+.facebookitems div.story_posted_item {
+  margin-bottom: .5em;
+}
+.facebookitems div.story_comment {
+  font-style: italic;  
+}
+.facebookitems div.url,
+.facebookitems div.story_comment .start_quote,
+.facebookitems div.story_comment .end_quote {
+  display: none;
+}
+
+
+/* feedburner links */
+.post .feedflare { display: none }
+
+
+#header #avatarcontainer.vcard {
+  display: inline;
+}
+#avatar.avatar_empty,
+#avatar.avatar_hidden {
+  display: none;
+}
+
+
+#profile {
+  color: #ccc;
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: -268px;
+  z-index: 60;
+}
+#profile a {
+  color: #fff;  
+}
+
+#profile .minimized {
+  border-top: 7px solid #111;  
+}
+
+#profile .maximized {
+  height: 300px;
+  background-color: #222;
+}
+
+#profile .user_container {
+  margin-left: 5px;
+  float: left;
+  background-color: #111;
+  padding: 0 10px 5px 10px;
+  -moz-border-radius-bottomleft: 1em;
+  -moz-border-radius-bottomright: 1em;
+  /*border: 1px solid #333;
+    border-top: 0;*/
+  border-radius-bottomleft: 1em;
+  border-radius-bottomright: 1em;
+}
+#profile .user_container .avatarlink img {
+  float: left;
+  margin-left: 4px;
+}
+#profile .realname {
+  float: left;
+  font-size: 16px;
+  color: #999;
+  margin-left: 5px;
+  padding: 7px 10px 4px 4px;
+}

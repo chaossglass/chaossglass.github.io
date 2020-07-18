@@ -1,0 +1,25 @@
+title: chaossglass's soup
+description: Szklanka pełna chaosu.
+theme: null
+layouts_dir: ./server/templates
+includes_dir: ./server/templates
+paginate: 10
+paginate_path: ":num"
+permalink: ":year-:month-:day-:title"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "page"
+plugins:
+  - github-pages
+  - jekyll-sitemap
+  - jekyll-feed

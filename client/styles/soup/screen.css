@@ -1,0 +1,703 @@
+/*
+  Width = 450
+  Friends = 12
+  Members = 12
+*/
+  @import "/client/styles/soup/shared.css";
+
+  body, ul#filter li.sel a { background-color: #538293; /* Customizable as color Background */ }
+  #header h4, #header .description a, #footercontainer, #footer a { color: #538293; /* Customizable as color Background */ }
+  
+  #headercontainer2 { background-color: #000000; /* Customizable as color Header */ }
+
+  #headercontainer, h1 a, #admin-h1, ul#filter li a, #groups_friends ul.friends li.morefriends a { color: #ffffff; /* Customizable as color Headerfont */ }  
+
+  body, .post .meta .time, .post .content blockquote, .source a, #admin-description, .pagination a, ul#filter li.sel a { color: #ffffff; /* Customizable as color TextMain */ }
+  
+  #content h2, .post .content cite { color: #000000; /* Customizable as color TextContrast */  }
+  
+  a { color: #333333; /* Customizable as color Links */ }
+  
+  body, textarea, .post .content cite, .post .content cite input { font-family: Verdana, Arial, Helvetica, sans-serif;  /* Customizable as font Text */ }
+  
+  .admin-style-header_1, #header h1, #header h1 input, #content h2 { 
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -.08em;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    font-variant: normal;
+  }
+  
+  body { font-size: 100%; /* Customizable as size Fonts 80..170 */ }
+
+  body {
+    margin: 0;
+  }
+    
+  h1, h2, h3, h4, h3 input { 
+    margin: 0;
+    letter-spacing: -1px;
+  }
+
+  /* Block "Style 1" for Header */
+  #header h1, #header h1 input {
+    font-family: Arial,Helvetica,sans-serif;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.08em;
+  }
+  
+  .post_quote .content blockquote, .post .content blockquote textarea, .post h3 {
+    font-family: Arial,Helvetica,sans-serif;
+    letter-spacing: -.02em;
+  }
+  
+    
+  input, textarea {
+    font-size: 1em !important;
+  }
+  
+  #main, #footer, #header { width: 700px; /* Customizable as s**e Width 300..900 */ }
+    
+  /* Block Center for Align */
+  #main, #footer, #header { 
+    margin: 0 auto;
+  }
+  #header { padding-left: 30px; }
+   
+  #headercontainer2 {
+    background-image: url('/client/images/gradient1.png');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    behavior: url(/stylesheets/iepngfix.htc);
+    overflow: hidden;
+  }
+  #headercontainer {
+    behavior: url(/stylesheets/iepngfix.htc);    
+  }
+  #header {
+    font-size: .9em;
+    overflow: hidden;
+    width: 730px;
+  } 
+  
+  /* Block Circles for Pattern */
+  #headercontainer { background: url('/client/images/header_circles.png') bottom center no-repeat; }
+  
+  #header h4, ul#filter li a {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: normal;
+  }
+  #header h4 {
+    margin: 0 0 .7em 0;
+    font-size: .8em;
+  }
+  
+  #header #h1 {
+    margin-top: 2.2em;
+    float: left;
+  }  
+  #header h1 {
+    font-size: 2.4em;
+    margin: 0;
+  }
+  #header h1 a {
+    padding-top: 0;
+    text-decoration: none;
+  }
+  
+  #avatarcontainer {
+    width: 48px;
+    height: 48px;
+    margin: 2em 15px 0 0;
+    float: left;
+  }
+  
+  #userinfo {
+    clear: both;
+    overflow: hidden;  
+    padding-top: 1em;
+    margin-bottom: .8em;
+    padding-left: 63px;
+  }
+
+  #description_search,
+  #accountcontainer,
+  #friendscontainer,
+  #groupscontainer {
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+  }
+  
+  #description_search {
+    float: left; 
+    clear: left;
+    width: 42%;
+    margin-right: 1.5%;
+    background: url('/client/images/nuppel.png') right 3px repeat-y;
+    behavior: url(/stylesheets/iepngfix.htc);
+  }
+  #descriptioncontainer2 {
+  }
+  #descriptioncontainer {
+    /*margin-bottom: 1em;*/
+    padding-right: 1em;  
+  }
+  #descriptioncontainer .description {
+    font-size: .9em;
+    line-height: 1.5em;
+  }
+
+  #accountcontainer {
+    width: 13%;
+    float: left;
+    margin-right: 1.5%;
+    background: url('/client/images/nuppel.png') right 3px repeat-y;
+    behavior: url(/stylesheets/iepngfix.htc);
+  } 
+      
+  #friendscontainer {
+    width: 20.4%;
+    float: left;
+  }
+  
+  #groupscontainer {
+    width: 10%; /* !! */
+    float: left;
+    margin-right: 1.5%;
+    background: url('/client/images/nuppel.png') right 3px repeat-y;
+  }
+
+  #searchcontainer {
+    margin-top: .5em;
+    font-size: .85em;
+  }
+  #searchcontainer input.search {
+    width: 60%;
+  }
+  #searchcontainer input.btn {
+    width: 30%;
+    max-width: 9em;
+  }
+  .description_hidden #description_search,
+  body.not_edit .description_empty #description_search { display: none; }
+  
+  .description_hidden #accountcontainer,
+  body.not_edit .description_empty #accountcontainer { width: 23%; }
+  .description_hidden #groupscontainer,
+  body.not_edit .description_empty #groupscontainer { width: 20%; }
+  .description_hidden #friendscontainer,
+  body.not_edit .description_empty #friendscontainer { width: 40.4%; }
+
+  .accounts_hidden #description_search,
+  .accounts_empty #description_search { width: 48%; }
+  .accounts_hidden #groupscontainer,
+  .accounts_empty #groupscontainer { width: 13%; }
+  .accounts_hidden #friendscontainer,
+  .accounts_empty #friendscontainer { width: 24.4%; }
+
+  .groups_hidden #description_search,
+  .groups_empty #description_search { width: 47%; }
+  .groups_hidden #accountcontainer,
+  .groups_empty #accountcontainer { width: 15%; }
+  .groups_hidden #friendscontainer,
+  .groups_empty #friendscontainer { width: 23.4%; }
+  
+  .friends_hidden #description_search,
+  .friends_empty #description_search { width: 52%; }
+  .friends_hidden #accountcontainer,
+  .friends_empty #accountcontainer { width: 19%; }
+  .friends_hidden #groupscontainer,
+  .friends_empty #groupscontainer { width: 14.4%; background-image: none; }
+
+  .groups_hidden .description_hidden .friends_hidden #accountcontainer,
+  .groups_hidden .accounts_hidden .friends_hidden #description_search,
+  .groups_hidden .description_hidden .accounts_hidden #friendscontainer,
+  .description_hidden .accounts_hidden .friends_hidden #groupscontainer,
+
+  .groups_hidden .description_hidden .friends_empty #accountcontainer,
+  .groups_hidden .accounts_hidden .friends_empty #description_search,
+  .groups_hidden .description_hidden .accounts_empty #friendscontainer,
+  .description_hidden .accounts_hidden .friends_empty #groupscontainer,
+  
+  body.not_edit .groups_hidden .description_empty .friends_empty #accountcontainer,
+  .groups_hidden .accounts_empty .friends_empty #description_search,
+  .groups_hidden .description_empty .accounts_empty #friendscontainer,
+  .description_hidden .accounts_empty .friends_empty #groupscontainer,
+
+  body.not_edit .groups_empty .description_empty .friends_hidden #accountcontainer,
+  .groups_empty .accounts_empty .friends_hidden #description_search,
+  .groups_empty .description_empty .accounts_hidden #friendscontainer,
+  body.not_edit .description_empty .accounts_empty .friends_hidden #groupscontainer,
+
+  body.not_edit .groups_hidden .description_empty .friends_hidden #accountcontainer,
+  .groups_hidden .accounts_empty .friends_hidden #description_search,
+  body.not_edit .groups_hidden .description_empty .accounts_hidden #friendscontainer,
+  .description_hidden .accounts_empty .friends_hidden #groupscontainer,
+
+  .groups_empty .description_hidden .friends_empty #accountcontainer,
+  .groups_empty .accounts_hidden .friends_empty #description_search,
+  .groups_empty .description_hidden .accounts_empty #friendscontainer,
+  body.not_edit .description_empty .accounts_hidden .friends_empty #groupscontainer,
+
+  body.not_edit .groups_empty .description_empty .friends_empty #accountcontainer,
+  .groups_empty .accounts_empty .friends_empty #description_search,
+  body.not_edit .groups_empty .description_empty .accounts_empty #friendscontainer,
+  body.not_edit .description_empty .accounts_empty .friends_empty #groupscontainer
+  {
+    width: 100%;
+    background-image: none;
+  }
+  
+  .description_empty #descriptioncontainer2 h4,
+  .accounts_empty #accountcontainer h4,
+  .friends_empty #friendscontainer h4,
+  .groups_empty #groupscontainer h4 {
+    display: none;
+  }
+  body.not_edit .description_empty #description_search,
+  .friends_empty #accountcontainer,
+  .accounts_empty #accountcontainer {
+    background-image: none;  
+  }
+    
+  
+  #maincontainer {
+    background-image: url('/client/images/gradient2.png');
+    background-repeat: repeat-x;
+    background-position: 0 1px;
+    behavior: url(/stylesheets/iepngfix.htc);
+    min-height: 120px;
+  }
+
+  #main { 
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+    
+  ul#accounts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul#accounts li {
+    margin: 0 1px 0 0;
+    padding: 0;
+    float: left;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    zoom: 1; /* iefix */
+  }
+  ul#accounts li:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  ul#accounts li a {
+    display: block;
+    width: 26px; height: 22px;
+    padding-top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #content h2 {
+    font-size: .9em;
+    font-weight: normal;
+    margin: 2em .6em 0 63px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    clear: both;
+    padding-bottom: 1em;
+  }
+  #content h2.date span:after {
+    content: ' ';
+  }
+  #content h2.date span.d:after {
+    content: ', ';
+  }
+  #content h2.date span.d-german:after {
+    content: '. ';
+  }
+  
+  ul#filter {
+    overflow: hidden;
+    list-style: none;
+    padding: 0 0 0 63px;
+    margin: 0 auto;
+    clear: both;
+  }
+  
+  ul#filter li {
+    float: left;
+  }
+    
+  ul#filter li a {
+    display: block;
+    font-size: .9em;
+    padding: .4em 1em .3em 1em;
+    margin-right: 1px;
+    text-align: center;
+    background: url('/client/images/white20.png');
+    behavior: url(/stylesheets/iepngfix.htc);
+    text-decoration: none;
+  }
+  ul#filter li a:hover {
+    background: url('/client/images/white40.png');
+  }
+  
+  ul#filter li.sel a {
+    cursor: default;
+  }
+ 
+  ul#friendslist, .pagination {
+    margin-left: 63px;
+  }
+
+  ul#friendslist {
+    list-style: none;
+    padding: 10px 5px 2px 5px;
+    overflow: hidden;
+    background: url('/client/images/white20.png');
+    behavior: url(/stylesheets/iepngfix.htc);
+    margin-top: 0;
+  }
+  ul#friendslist li {
+    margin: 0 3px 3px 0;
+    padding: 0;
+    float: left;
+  }
+  ul#friendslist li a {
+    display: block;
+    height: 32px;
+  }
+
+
+  #friendscontainer ul#friends-rest {
+    display: none;
+  }
+
+  #groups_friends ul.friends {
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;
+  }
+  #groups_friends ul.friends li {
+    float: left;
+    margin: 0 3px 3px 0;
+    padding: 0;
+  }
+  #groups_friends ul.friends li a {
+    opacity: .5;
+    filter:alpha(opacity=50);
+    display: block;
+  }
+  #groups_friends ul.friends li a:hover {
+    opacity: 1;
+    filter:alpha(opacity=100);
+  }
+  #groups_friends ul.friends li a img {
+    display: block;
+  }
+  #groups_friends ul.friends li.morefriends a {
+	  text-decoration: none;
+	  font-size: 1.5em;
+	  font-weight: bold;
+	  line-height: 22px;
+	  padding-top: 2px;
+	  text-align: center;
+	  width: 51px;
+  }
+  
+  #posts {
+    padding-top: .8em;
+  }
+
+  #posts .help {
+    margin-left: 65px;
+  }
+  #posts .search_noresults {
+    height: 200px;  
+  }
+  
+  #posts .endlessnotice {
+    margin-left: 10.1%;
+    font-size: .9em;
+  }
+  #posts #more_loading,
+  #posts #page_end {
+    padding-bottom: 2em;
+  }
+  #posts #reload_notice {
+    margin: 1em 0 0 0;
+  }
+  
+  .post {
+    overflow: hidden; 
+    clear: both;
+    padding: 0;
+    margin: 1em 0 0 0;
+    /* width: 88%; */
+    font-size: .9em;
+  }
+  
+  .post h3 {
+    margin: 0 0 .4em 0;
+    font-size: 1.5em;
+  }
+  
+  .post .meta {
+    float: left;
+    clear: left;
+    font-size: .8em;
+    margin-right: 15px;
+    width: 48px;
+  }
+  
+  .post .meta .icons {
+    background: url('/client/images/white20.png');
+    behavior: url(/stylesheets/iepngfix.htc);
+    height: 35px;
+  }
+  .post .meta .hidden {
+    display: block;
+    visibility: hidden;  
+  }
+   
+  .post .meta .icon {
+    display: block;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: .2em;
+    text-align: center;
+  }  
+  .post .meta .icon,
+  .post .meta .time {
+    font-size:.9em;
+  } 
+  
+  #content.multiple-authors .post .meta .type { display: none; }
+  #content.multiple-authors .post.author-self .meta .type { display: block; }
+  #content.multiple-authors .post .meta .source { display: none; }
+  #posts .imported .meta .type { display: none; }
+  #posts .meta .author { display: none; }
+  #content.multiple-authors .meta .author { display: block; }
+  #content.multiple-authors .post.author-self .meta .author { display: none; }
+  #content.multiple-authors .new-container .post .meta .type { display: block; }
+  #content.multiple-authors .new-container .post .meta .author { display: none; }
+
+  .post .meta .source {
+    background-image: none;
+  }
+  
+  .post .meta .source img {
+    margin: 9px 10px;
+  }
+      
+   
+  .post .meta .time {
+    display: block;
+    text-align: center;
+    padding: .5em 0 0 0;
+    line-height: 1em;
+  }
+
+  .post .meta .author {
+    width: 32px;
+    margin-left: 8px;
+  }
+
+  .post .meta .author img {
+    margin-top: 1px;
+  }
+  .post .meta .author .user_container_group img { margin: 0; }
+  .post .meta .author .user_container_group { padding-top: 1px; }
+
+  .post .content .source {
+    font-size: .85em;  
+    margin: 1em 0 0 0;
+    opacity: .6;
+    filter: alpha(opacity=60); /* ie6fix */
+    zoom: 1; /* ie6fix */
+  }
+  .post .content .after_reactions {
+    margin-top: 0;
+  }
+  
+  .post_image .content img {
+    display: block;
+  }
+  .post_image .content .source img,
+  .post_image .admin-edit .admin-bar img {
+    display: inline;
+  }
+  .new-container .post_image .content-container,
+  body.edit .post_image .content-container {
+    /*width: 420px;*/
+  }
+  
+  .post_video a.tv_promo {
+    margin-right: 10px;  
+  }
+
+  .post .content-container {
+    width: 510px; /*83%;*/
+    float: left;
+    line-height: 1.4em;
+    margin: 0 0 .6em 0;
+  }
+ 
+  .post .content p {
+    margin: 0 0 .8em 0;
+  }
+  .post .admin-edit p {
+    margin: 0 0 .5em 0;
+  }
+  
+  .post_link .content {
+    margin-top: .4em;
+  }
+  .post_link .admin-edit {
+    margin-top: 0;
+  }
+  
+  .post_link .content h3 {
+    display: inline;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+  
+  .post_link .content p {
+    font-size: .95em;
+    line-height: 1.3em;
+  }
+  
+  .post_image .content  {
+    background: url('/client/images/black30.png');
+    padding: 5px;
+    width: auto; /*420px;*/
+  }
+  .post_image .content .description {
+    margin: .1em;
+    font-size: .9em;
+    line-height: 1.3em;
+    max-width: 418px;
+  }
+  
+  .post .content form {
+    margin: 0;
+  }
+  
+  .post .admin-edit .admin-bar,
+  .new-container .post .admin-edit,
+  .post_image .gallery .admin-edit {
+    margin-left: 0;  
+  }
+  
+  .post_quote .content blockquote {
+    margin: 0;
+  }
+  .post_quote .content blockquote .quote {
+    display: none;
+  }
+  .post_quote .content blockquote, .post .content blockquote textarea {
+    font-size: 1.9em;
+    line-height: 1.1em;
+    font-weight: bold;
+  }
+  .post_quote .content blockquote textarea {
+    width: 100% !important;
+  }  
+  .long .content blockquote {
+    font-size: 1.2em  !important;
+  }
+  .short .content blockquote {
+    font-size: 2.2em !important;
+  }
+  .post_regular .content .body blockquote {
+    font-size: 1em !important;
+    line-height: 1.4em;
+  }
+  .long .content .description blockquote {
+    font-size: 1em !important;
+    margin-top: 0;
+  }
+  .long .content .description blockquote p {
+    margin: 0;
+  } 
+    
+  .post_quote .content cite {
+    margin: .5em 7em 0 0;
+    display: block;
+  }
+  .post_quote .content cite, .post .content cite input {
+    font-size: .9em;
+    font-style: normal;
+  }
+  
+  .post_quote .admin-edit blockquote .start,
+  .post_quote .admin-edit blockquote .end {
+    display: none;
+  }
+  
+  .pagination {
+    text-align: center;
+  }
+  .pagination a, body.calendar .to-front-page {
+    text-decoration: none;
+    background: url('/client/images/black30.png');
+    behavior: url(/stylesheets/iepngfix.htc);
+  }
+  body.calendar .to-front-page {
+    padding: .3em .6em .3em .7em;
+    font-size: .8em;
+	float: right;
+	color: #fff;
+	margin-right: 3em;
+	margin-top: 1em;
+  }
+  .paginationtop {
+    overflow: hidden;
+    margin-top: 2em;
+  }
+  .paginationbottom {
+    margin-top: 2.7em;
+    margin-bottom: 5em;
+  }
+
+  .pagination a.more {
+    font-size: 1.2em;
+    padding: .5em 1em;
+    margin-left: -12em;
+  }
+
+  .pagination a.front, .pagination a.back {
+    padding: .3em .7em .4em .9em;
+    font-size: .85em;
+    margin-right: .1em;
+    float: left;
+  }
+  .pagination a.back {
+    float: left;
+  }
+ 
+    
+  #footercontainer {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
+  #footer p.feed {
+    font-size:.9em;
+    margin-top: 1em;
+  }
+  
+  #posts .musictrack { margin-top: 0 }
+  
+  #barcontainer #barbg { background-color: #000 }

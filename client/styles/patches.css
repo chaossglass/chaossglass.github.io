@@ -1,0 +1,11 @@
+.pagination a.back.last {
+    float: right;
+}
+
+.pagination.paginationbottom {
+    width: 510px;
+}
+
+.pagination a.more {
+    margin-left: 0;
+}

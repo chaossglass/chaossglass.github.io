@@ -1,0 +1,17 @@
+
+{% assign post = page %}
+<h2 class="date">{{ post.date | date: "%B %d, %Y"}}</h2>
+
+<div class="post post_image author-self source-local">
+	<div class="meta">
+		<div class="icons">
+		  <div class="icon type"><a href="{{ post.url }}" title="(Image)"></a></div>
+		</div>
+	</div>
+  
+	<div class="content-container">
+		<div class="content">
+			{{ post.content | markdownify }}
+  		</div>
+	</div>
+</div>

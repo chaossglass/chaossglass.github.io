@@ -1,0 +1,8 @@
+---
+title: "DON’T LET THE HATERS STOP YOU FROM DOING"
+date: 2011-05-01
+---
+
+![2011-05-01-lohrya23.gif](/images/2011-05-01-lohrya23.gif)
+
+DON’T LET THE HATERS STOP YOU FROM DOING YOUR THANG.

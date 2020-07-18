@@ -1,0 +1,28 @@
+@import url("/client/styles/soup/header_Style%201.css");
+@import url("/client/styles/soup/align_Center.css");
+@import url("/client/styles/soup/pattern_Circles.css");
+/* background */
+body, ul#filter li.sel a { background-color: #538293; }
+#header h4, #header .description a, #footercontainer, #footer a { color: #538293; }
+
+/* headercolor */
+#headercontainer2 { background-color: #000000; }
+
+/* headerfont */
+#headercontainer, h1 a, #admin-h1, ul#filter li a, #groups_friends ul.friends li.morefriends a { color: #ffffff; }
+
+/* textmain */
+body, .post .meta .time, .post .content blockquote, .source a, #admin-description, .pagination a, ul#filter li.sel a { color: #ffffff; }
+
+/* textcontrast */
+#content h2, .post .content cite { color: #000000; }
+
+/* links */
+a { color: #ffffff; }
+
+/* text */
+body, textarea, .post .content cite, .post .content cite input { font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+/* fonts */
+body { font-size: 100%; }
+
